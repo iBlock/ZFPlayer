@@ -77,10 +77,7 @@ static NSMutableDictionary <NSString* ,NSNumber *> *_zfPlayRecords;
     MPVolumeView *volumeView = [[MPVolumeView alloc] init];
     self.volumeViewSlider = nil;
     for (UIView *view in [volumeView subviews]){
-        if ([view.class.description isEqualToString:@"MPVolumeSlider"]){
-            self.volumeViewSlider = (UISlider *)view;
-            break;
-        }
+        // remove private api
     }
 }
 
